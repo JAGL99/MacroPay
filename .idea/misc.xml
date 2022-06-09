@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android_Proyects/Pruebas_Tecnicas/MacroPay/app/src/main/res/layout/activity_main.xml" value="0.17350557244174267" />
+        <entry key="..\:/Android_Proyects/Pruebas_Tecnicas/MacroPay/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Android_Proyects/Pruebas_Tecnicas/MacroPay/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/Android_Proyects/Pruebas_Tecnicas/MacroPay/app/src/main/res/layout/fragment_main.xml" value="0.35260416666666666" />
       </map>
     </option>
   </component>

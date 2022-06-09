@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.macropay"
-        minSdk 21
+        minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -34,18 +34,19 @@ android {
     viewBinding {
         enabled = true
     }
-    dataBinding{
+    dataBinding {
         enabled = true
     }
 }
 
 dependencies {
 
-    def retrofitVersion = '2.9.0'
-    def okhttpVersion = '4.9.2'
+    def retrofit_version = '2.9.0'
+    def okhttp_version = '4.9.2'
     def nav_version = "2.4.2"
     def fragment_version = "1.4.1"
-    def lifecycleRuntimeVersion = '2.4.1'
+    def lifecycle_runtime_version = '2.4.1'
+    def security_crypto_version = "1.1.0-alpha03"
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
@@ -56,17 +57,18 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // Retrofit
-    implementation ("com.squareup.retrofit2:retrofit:$retrofitVersion") {
+    implementation("com.squareup.retrofit2:retrofit:$retrofit_version") {
         exclude module: 'okhttp'
     }
-    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
 
     //OkHttp
-    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation("com.squareup.okhttp3:okhttp:$okhttp_version")
 
     //Ktx
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleRuntimeVersion"
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_runtime_version")
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
+    implementation("androidx.security:security-crypto-ktx:$security_crypto_version")
 }
